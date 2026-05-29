@@ -1,0 +1,22 @@
+programa
+{
+	funcao inicio()
+	{
+		inteiro tabuada
+		inteiro numero
+		inteiro resultado
+
+		para (tabuada = 1; tabuada <= 10; tabuada = tabuada + 1)
+		{
+			escreva("Tabuada do ", tabuada, "\n")
+
+			para (numero = 1; numero <= 10; numero = numero + 1)
+			{
+				resultado = tabuada * numero
+				escreva(tabuada, " x ", numero, " = ", resultado, "\n")
+			}
+
+			escreva("\n")
+		}
+	}
+}
