@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    cadeia sexo , olhos , cabelos
+    inteiro idade
+    inteiro maioridade , qtmulheres
+    inteiro i
+    maioridade <= 0
+    qtmulheres <= 0
+    para(inteiro i= 1; i <= 500; i++){
+      escreva("sexo (M/F)")
+      leia(sexo)
+      escreva("cor dos olhos (A/V/C)")
+      leia(olhos)
+      escreva("cor dos cabelos (L/C/P)")
+      leia(cabelos)
+      escreva("sua idade")
+      leia(idade)
+      se (idade >= maioridade){
+        maioridade <= idade
+      } se (sexo == "F" e idade >= 18 e idade <= 35 e olhos == "V" e cabelos == "L"){
+        qtmulheres <= qtmulheres + 1
+      }escreva("maior idade do grupo", maioridade)
+      escreva("quantidade de mulheres entre 18 e 35 anos com olhos verdes e cabelos louros", qtmulheres)
+
+    }
+  }
+}
